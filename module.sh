@@ -1,7 +1,7 @@
 #!/bin/bash
 
 CONFIG_DIR=~/.config/nvim
-NVARCH=$(find / -type d -name "exampledir")
+NVARCH=$(find / -type d -name "ignore")
 
 # making sure neovim directory exists
 function neovim {
@@ -18,7 +18,7 @@ function repo {
     if [ -d "$NVARCH" ]; then
         echo "Repository detected"
     else
-        git clone https://github.com/[REPOSITORY_NAME] $NVARCH
+        git clone https://github.com/azsao/ignore.git 
     fi 
 }
 
